@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>resource</short-name>
+  <uri>http://localhost:8080/static/resource</uri>
+  <tag>
+    <name>appModule</name>
+    <tag-class>bto.ring.tags.resources.AppModule</tag-class>
+    <body-content>empty</body-content>
+    <info>This tag includes all the CSS or JS files passed in the fileArray, in that order.</info>
+    <attribute>
+      <name>path</name>
+      <required>true</required>
+      <description>Path of file</description>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>type</name>
+      <required>false</required>
+      <description>Type, module (jspf) or resource (JS, CSS)</description>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>position</name>
+      <required>false</required>
+      <description>Position to be loaded, HEAD or BODY</description>
+      <rtexprvalue>true</rtexprvalue>
+      <type>bto.ring.tags.resources.AppModule.POSITIONS</type>
+    </attribute>
+  </tag>
+</taglib>
